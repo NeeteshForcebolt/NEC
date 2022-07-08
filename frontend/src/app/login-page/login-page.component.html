@@ -1,0 +1,42 @@
+<div fxLayout="row" fxFlex.gt-lg="100%">
+  <div fxLayout="column" fxFlex="50%">
+    <img
+      src="../../assets/kisspng-attendance-management-human-resource-management-sy-attendance-management-system-attendance-managemen-5d170716504745.1763417515617902303288.png"
+      alt="">
+  </div>
+  <div fxLayout="column" fxLayoutAlign="center center" fxFlex="50%">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>Sign in to your Qandle account</mat-card-title>
+      </mat-card-header>
+      <mat-card-content class="mt-3">
+        <form #myForm="ngForm" (ngSubmit)="myForm.valid && onSubmit(myForm)" class="example-form mt-3">
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Work Email</mat-label>
+            <input matInput #email="ngModel" [(ngModel)]="userLoginService.selectedLogin.email" name="email" required
+              [ngClass]="{'invalid-textbox' : myForm.submitted && !email.valid}">
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Password</mat-label>
+            <input matInput type="password" placeholder="Password" name="password" minlength="4" #password="ngModel"
+              [(ngModel)]="userLoginService.selectedLogin.password" name="password" minlength="4" required
+              [ngClass]="{'invalid-textbox' : myForm.submitted && !password.valid}">
+            <mat-hint align="start"><strong>Don't disclose personal info</strong> </mat-hint>
+          </mat-form-field>
+          <button mat-raised-button color="primary" fxFill class="mt-3">
+            SIGN IN</button>
+        </form>
+        <div class="mt-5">
+          <p>
+            © 2022 Qandle (Digital Ecom Techno Pvt. Ltd.)
+            Privacy Policy
+          </p>
+          <p>
+            Join PeoplePro - FREE community for working professionals. Know More
+          </p>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

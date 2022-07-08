@@ -1,0 +1,9 @@
+.example-full-width {
+  width: 100%;
+}
+
+.mat-card:not([class*=mat-elevation-z]) {
+  box-shadow: 1px 2px 1px -1px rgb(111, 111, 111),
+              1px 1px 1px 0 rgb(111, 111, 111),
+              1px 1px 3px 0 rgb(111, 111, 111);
+}

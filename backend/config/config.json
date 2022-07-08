@@ -1,0 +1,10 @@
+{
+    "development": {
+        "PORT": 3000,
+        "MONGODB_URI":"mongodb+srv://neeteshkumar:12345678nk@cluster0.aipp8.mongodb.net/myUserData?retryWrites=true&w=majority"
+    },
+    "production": {
+        "PORT": 80,
+        "MONGODB_URI": "mongodb+srv://neeteshkumar:12345678nk@cluster0.aipp8.mongodb.net/myUserData?retryWrites=true&w=majority"
+    }
+}
